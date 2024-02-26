@@ -191,3 +191,6 @@ ul li a{
 .projects-left-margin {
   margin-left: 20px; /* Adjust the value as per your design needs */
 }
+.projects-section {
+  margin-left: 50px;
+}

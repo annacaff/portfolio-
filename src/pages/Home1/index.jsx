@@ -115,7 +115,7 @@ const Home1Page = () => {
             </div>
           </div>
           <Line className="bg-gray-800 h-px mt-20 w-full" />
-          <div className="font-manrope h-[2418px] sm:h-[2458px] md:h-[4097px] mt-[23px] md:px-5 relative w-full">
+          <div className="font-manrope h-[2418px] sm:h-[2458px] md:h-[4097px] mt-[23px] md:px-5 ml-12 relative w-full">
             <Line className="absolute bg-gray-800 bottom-[1%] h-px inset-x-[0] mx-auto w-full" />
             <div className="absolute flex flex-col md:gap-10 gap-20 h-full inset-[0] items-start justify-start m-auto py-20 w-auto">
               <div className="flex flex-col gap-2 items-start justify-start w-[600px] md:w-full">
@@ -436,7 +436,7 @@ const Home1Page = () => {
                   size="txtManropeRegular18"
                 >
                   <>
-                    Based in Malaysia but open to relocation, I am a full stack
+                    Based in Belgium but open to relocation, I am a full stack
                     developer eagerly seeking dynamic opportunities to challenge
                     and grow my skills. My background in Economics enriches my
                     approach to creating efficient and accessible software.
