@@ -433,7 +433,7 @@ const Home1Page = () => {
                 </Text>
                 <Text
                   className="leading-[150.00%] max-w-[704px] md:max-w-full text-gray-500 text-lg"
-                  size="txtManropeRegular18"
+      size="txtManropeRegular18"
                 >
                   <>
                     Based in Belgium but open to relocation, I am a full stack
@@ -450,7 +450,7 @@ const Home1Page = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col font-manrope gap-1 items-start justify-start mt-[26px] md:px-5 w-auto">
+          <div className="flex flex-col font-manrope gap-1 items-start justify-start mt-[26px] w-auto">
             <Text
               className="text-base text-black-900 uppercase w-auto"
               size="txtManropeBold16Black900"

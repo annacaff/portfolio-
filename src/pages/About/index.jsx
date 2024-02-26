@@ -5,7 +5,7 @@ import { Button, Img, Input, Line, Text, TextArea } from "components";
 const AboutPage = () => {
   return (
     <>
-      <div className="bg-gray-50_01 flex flex-col font-bebasneue items-center justify-start mx-auto w-full">
+      <div className="bg-pink-100 flex flex-col font-bebasneue items-center justify-start mx-auto w-full">
         <div className="flex flex-col items-center justify-start w-full">
           <header className="flex flex-row items-center justify-between md:px-5 px-[60px] py-6 w-full">
             <Text
@@ -55,7 +55,7 @@ const AboutPage = () => {
                   size="txtManropeRegular18"
                 >
                   <>
-                    Based in Malaysia but open to relocation, I am a full stack
+                    Based in Belgium but open to relocation, I am a full stack
                     developer eagerly seeking dynamic opportunities to challenge
                     and grow my skills. My background in Economics enriches my
                     approach to creating efficient and accessible software.
@@ -124,18 +124,17 @@ const AboutPage = () => {
             alt="image_One"
           />
           <div className="h-[428px] sm:h-[468px] md:h-[584px] mt-10 md:px-5 relative w-full">
-            <div className="absolute flex md:flex-col flex-row gap-6 h-full inset-y-[0] items-center justify-between max-w-[1328px] my-auto py-20 right-[0] w-full">
+            <div className="mt-10 md:px-5 w-full flex justify-between items-center">
+            <div className="pl-10">
               <Text
-                className="flex-1 md:text-5xl text-[76px] text-gray-500 w-auto"
-                size="txtBebasNeueRegular76"
-              >
+                className="text-[76px] md:text-5xl text-gray-500" size="txtBebasNeueRegular76">
+
                 My Capabilities
               </Text>
-              <div className="flex flex-1 flex-col font-manrope gap-8 items-start justify-start w-full">
+              </div>
+              <div className="max-w-[600px] md:max-w-full text-right mr-10">
                 <Text
-                  className="leading-[150.00%] max-w-[600px] md:max-w-full text-gray-500 text-lg"
-                  size="txtManropeRegular18"
-                >
+                  className="leading-[150.00%] text-gray-500 text-lg mb-4" size="txtManropeRegular18">
                   <>
                     I&#39;m dedicated to continuously expanding my tech skills.
                     My expertise spans HTML, CSS, Python, JavaScript (React.js,
@@ -148,7 +147,7 @@ const AboutPage = () => {
                   <div className="flex flex-col gap-4 items-start justify-start w-[87%]">
                     <div className="flex sm:flex-col flex-row gap-4 items-center justify-between w-full">
                       <Button
-                        className="cursor-pointer font-bold min-w-[124px] rounded-[28px] text-base text-center uppercase"
+                        className="cursor-pointer font-bold min-w-[124px] rounded-[28px] text-xl text-center uppercase"
                         shape="round"
                         color="gray_800"
                         size="md"
@@ -157,7 +156,7 @@ const AboutPage = () => {
                         HTML
                       </Button>
                       <Button
-                        className="cursor-pointer font-bold min-w-[114px] rounded-[28px] text-base text-center uppercase"
+                        className="cursor-pointer font-bold min-w-[114px] rounded-[28px] text-xl text-center uppercase"
                         shape="round"
                         color="gray_800"
                         size="md"
@@ -166,7 +165,7 @@ const AboutPage = () => {
                         CSS
                       </Button>
                       <Button
-                        className="cursor-pointer font-bold min-w-[175px] rounded-[28px] text-base text-center uppercase"
+                        className="cursor-pointer font-bold min-w-[175px] rounded-[28px] text-xl text-center uppercase"
                         shape="round"
                         color="gray_800"
                         size="md"
@@ -175,7 +174,7 @@ const AboutPage = () => {
                         Javascript
                       </Button>
                       <Button
-                        className="cursor-pointer font-bold min-w-[146px] rounded-[28px] text-base text-center uppercase"
+                        className="cursor-pointer font-bold min-w-[146px] rounded-[28px] text-xl text-center uppercase"
                         shape="round"
                         color="gray_800"
                         size="md"
@@ -186,7 +185,7 @@ const AboutPage = () => {
                     </div>
                     <div className="flex sm:flex-col flex-row gap-4 items-center justify-start w-4/5 md:w-full">
                       <Button
-                        className="cursor-pointer font-bold min-w-[196px] rounded-[28px] text-base text-center uppercase"
+                        className="cursor-pointer font-bold min-w-[196px] rounded-[28px] text-xl text-center uppercase"
                         shape="round"
                         color="gray_800"
                         size="md"
@@ -195,7 +194,7 @@ const AboutPage = () => {
                         RUBY ON RAILS
                       </Button>
                       <Button
-                        className="cursor-pointer font-bold min-w-[112px] rounded-[28px] text-base text-center uppercase"
+                        className="cursor-pointer font-bold min-w-[112px] rounded-[28px] text-xl text-center uppercase"
                         shape="round"
                         color="gray_800"
                         size="md"
@@ -204,7 +203,7 @@ const AboutPage = () => {
                         SQL
                       </Button>
                       <Button
-                        className="cursor-pointer font-bold min-w-[140px] rounded-[28px] text-base text-center uppercase"
+                        className="cursor-pointer font-bold min-w-[140px] rounded-[28px] text-xl text-center uppercase"
                         shape="round"
                         color="gray_800"
                         size="md"
