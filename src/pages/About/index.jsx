@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 import { Button, Img, Input, Line, Text, TextArea } from "components";
 
 const AboutPage = () => {
@@ -17,19 +17,19 @@ const AboutPage = () => {
             <div className="flex flex-col font-manrope items-center justify-center w-auto">
               <ul className="flex flex-row gap-8 sm:hidden items-start justify-start w-auto common-row-list">
                 <li>
-                  <a href="javascript:" className="text-base text-gray-500">
+                <Link to="/home1#projectsSection" className="text-base text-gray-500">
                     <Text size="txtManropeMedium16">Work</Text>
-                  </a>
+                </Link>
                 </li>
                 <li>
-                  <a href="javascript:" className="text-base text-gray-500">
+                  <button onClick={() => document.getElementById('aboutSection').scrollIntoView({ behavior: 'smooth' })} className="text-base text-gray-500">
                     <Text size="txtManropeMedium16">About</Text>
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="javascript:" className="text-base text-gray-500">
+                  <button onClick={() => document.getElementById('contactSection').scrollIntoView({ behavior: 'smooth' })} className="text-base text-gray-500">
                     <Text size="txtManropeMedium16">Contact</Text>
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>

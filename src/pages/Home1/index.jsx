@@ -118,11 +118,11 @@ const Home1Page = () => {
           <div className="font-manrope h-[2418px] sm:h-[2458px] md:h-[4097px] mt-[23px] md:px-5 ml-12 relative w-full">
             <Line className="absolute bg-gray-800 bottom-[1%] h-px inset-x-[0] mx-auto w-full" />
             <div className="absolute flex flex-col md:gap-10 gap-20 h-full inset-[0] items-start justify-start m-auto py-20 w-auto">
-              <div className="flex flex-col gap-2 items-start justify-start w-[600px] md:w-full">
+              <div id="projectsSection" className="flex flex-col gap-2 items-start justify-start w-[600px] md:w-full">
                 <Text
                   className="md:text-5xl text-[76px] text-gray-500 w-auto"
-                  size="txtBebasNeueRegular76"
-                >
+                  size="txtBebasNeueRegular76">
+
                   Projects
                 </Text>
                 <Text
