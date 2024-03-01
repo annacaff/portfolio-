@@ -2,6 +2,8 @@ import React from "react";
 
 import { Button, Img, Input, Line, List, Text, TextArea } from "components";
 import HomeProjectcard from "components/HomeProjectcard";
+import { Link } from "react-router-dom";
+
 
 const Home1Page = () => {
   return (
@@ -26,12 +28,9 @@ const Home1Page = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="javascript:"
-                    className="text-base text-gray-500 tracking-[-0.48px]"
-                  >
-                    <Text size="txtInterMedium16">About</Text>
-                  </a>
+                <Link to="/about" className="text-base text-gray-500 tracking-[-0.48px]">
+                   <Text size="txtInterMedium16">About</Text>
+                  </Link>
                 </li>
                 <li>
                   <a
