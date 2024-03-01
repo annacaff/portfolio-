@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import { Button, Img, Input, Line, List, Text, TextArea } from "components";
 import HomeProjectcard from "components/HomeProjectcard";
 import { Link } from "react-router-dom";
 
 
+
 const Home1Page = () => {
+  const contactRef = useRef(null);
+  const scrollToContact = () => {
+    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <>
       <div className="bg-pink-100 flex flex-col font-bebasneue items-center justify-start mx-auto w-full">
@@ -33,12 +38,9 @@ const Home1Page = () => {
                   </Link>
                 </li>
                 <li>
-                  <a
-                    href="javascript:"
-                    className="text-base text-gray-500 tracking-[-0.48px]"
-                  >
+                  <button onClick={scrollToContact} className="text-base text-gray-500 tracking-[-0.48px]">
                     <Text size="txtInterMedium16">Contact</Text>
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>
@@ -467,7 +469,7 @@ const Home1Page = () => {
             </Text>
             <Line className="bg-black-900 h-0.5 w-full" />
           </div>
-          <div className="font-manrope sm:h-[1161px] md:h-[1459px] h-[771px] mt-[390px] md:px-5 relative w-full">
+          <div ref={contactRef} className="font-manrope sm:h-[1161px] md:h-[1459px] h-[771px] mt-[390px] md:px-5 relative w-full">
             <Line className="absolute bg-gray-800 h-px inset-x-[0] mx-auto top-[3%] w-full" />
             <div className="absolute flex md:flex-col flex-row gap-6 h-full inset-[0] items-center justify-start m-auto max-w-[1224px] py-20 w-full">
               <div className="flex flex-1 flex-col gap-6 h-full items-start justify-between w-full">
