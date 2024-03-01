@@ -1,8 +1,21 @@
-import React from "react";
-import { Link } from 'react-router-dom';
+import React, { useRef } from "react";
+import { Link, useLocation} from 'react-router-dom';
 import { Button, Img, Input, Line, Text, TextArea } from "components";
 
 const AboutPage = () => {
+  const location = useLocation();
+  const contactRef = useRef(null);
+
+  const scrollToContact = () => {
+    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+  const handleAboutClick = () => {
+    // Check if the current location's pathname matches the About page's path
+    if (location.pathname === '/about') {
+      // We're already on the About page, so do nothing
+      return;
+    }
+  }
   return (
     <>
       <div className="bg-pink-100 flex flex-col font-bebasneue items-center justify-start mx-auto w-full">
@@ -22,14 +35,17 @@ const AboutPage = () => {
                 </Link>
                 </li>
                 <li>
-                  <button onClick={() => document.getElementById('aboutSection').scrollIntoView({ behavior: 'smooth' })} className="text-base text-gray-500">
+                  <button onClick={handleAboutClick} className="text-base text-gray-500">
                     <Text size="txtManropeMedium16">About</Text>
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => document.getElementById('contactSection').scrollIntoView({ behavior: 'smooth' })} className="text-base text-gray-500">
-                    <Text size="txtManropeMedium16">Contact</Text>
-                  </button>
+                <button
+                 onClick={() => contactRef.current?.scrollIntoView({ behavior: 'smooth' })}
+                 className="text-base text-gray-500"
+                >
+                Contact
+                </button>
                 </li>
               </ul>
             </div>
@@ -218,7 +234,7 @@ const AboutPage = () => {
             </div>
             <Line className="absolute bg-gray-800 bottom-[6%] h-px inset-x-[0] mx-auto w-full" />
           </div>
-          <div className="font-manrope sm:h-[1270px] md:h-[1568px] h-[771px] mt-[499px] md:px-5 relative w-full">
+          <div ref={contactRef} id="contactSection" className="font-manrope sm:h-[1270px] md:h-[1568px] h-[771px] mt-[499px] md:px-5 relative w-full">
             <Line className="absolute bg-gray-800 h-px inset-x-[0] mx-auto top-[1%] w-full" />
             <div className="absolute flex md:flex-col flex-row gap-6 h-full inset-[0] items-center justify-start m-auto max-w-[1224px] py-20 w-full">
               <div className="flex flex-1 flex-col gap-6 h-full items-start justify-between w-full">
