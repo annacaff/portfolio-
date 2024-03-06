@@ -27,24 +27,24 @@ const AboutPage = () => {
             >
               Anna Caffiero
             </Text>
-            <div className="flex flex-col font-manrope items-center justify-center w-auto">
+            <div className="flex flex-col font-inter items-center justify-center w-auto">
               <ul className="flex flex-row gap-8 sm:hidden items-start justify-start w-auto common-row-list">
                 <li>
-                <Link to="/home1#projectsSection" className="text-base text-gray-500">
-                    <Text size="txtManropeMedium16">Work</Text>
+                <Link to="/home1#projectsSection" className="text-base text-gray-500 tracking-[-0.48px]">
+                  <Text size="txtInterMedium16">Work</Text>
                 </Link>
                 </li>
                 <li>
-                  <button onClick={handleAboutClick} className="text-base text-gray-500">
+                <button onClick={handleAboutClick} className="text-base text-gray-500 tracking-[-0.48px]">
                     <Text size="txtManropeMedium16">About</Text>
                   </button>
                 </li>
                 <li>
                 <button
-                 onClick={() => contactRef.current?.scrollIntoView({ behavior: 'smooth' })}
-                 className="text-base text-gray-500"
+                onClick={() => contactRef.current?.scrollIntoView({ behavior: 'smooth' })}
+                className="text-base text-gray-500 tracking-[-0.48px]"
                 >
-                Contact
+                <Text size="txtInterMedium16">Contact</Text>
                 </button>
                 </li>
               </ul>

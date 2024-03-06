@@ -92,19 +92,21 @@ const Home1Page = () => {
                     alt="bxllinkedinsvg"
                   />
                 </Button>
-                <Button
-                  className="flex h-[54px] items-center justify-center w-[54px]"
-                  shape="circle"
-                  color="gray_900"
-                  size="sm"
-                  variant="fill"
-                >
-                  <Img
-                    className="h-[26px]"
-                    src="images/img_bxlgithubsvg.svg"
-                    alt="bxlgithubsvg"
-                  />
-                </Button>
+                <a href="https://github.com/annacaff" target="_blank" rel="noopener noreferrer">
+                 <Button
+                    className="flex h-[54px] items-center justify-center w-[54px]"
+                    shape="circle"
+                    color="gray_900"
+                    size="sm"
+                    variant="fill"
+                 >
+                    <Img
+                       className="h-[26px]"
+                       src="images/img_bxlgithubsvg.svg"
+                       alt="bxlgithubsvg"
+                    />
+                 </Button>
+                </a>
               </div>
             </div>
             <div className="flex md:flex-1 flex-col items-center justify-start w-1/2 md:w-full">
