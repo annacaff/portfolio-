@@ -118,21 +118,19 @@ const AboutPage = () => {
                     alt="bxllinkedinsvg"
                   />
                 </Button>
-                <a href="https://github.com/annacaff" target="_blank" rel="noopener noreferrer">
-                 <Button
-                    className="flex h-[54px] items-center justify-center w-[54px]"
-                    shape="circle"
-                    color="gray_900"
-                    size="sm"
-                    variant="fill"
-                 >
-                    <Img
-                       className="h-[26px]"
-                       src="images/img_bxlgithubsvg.svg"
-                       alt="bxlgithubsvg"
-                    />
-                 </Button>
-                </a>
+                <Button
+                  className="flex h-[54px] items-center justify-center w-[54px]"
+                  shape="circle"
+                  color="gray_900"
+                  size="sm"
+                  variant="fill"
+                >
+                  <Img
+                    className="h-[26px]"
+                    src="images/img_bxlgithubsvg_white_a700.svg"
+                    alt="bxlgithubsvg"
+                  />
+                </Button>
               </div>
             </div>
           </div>
